@@ -726,6 +726,16 @@
   </div>
   
 
+  <script>
+    console.log("Hello from the HTML file")
+
+    let xButton = document.querySelector("body > div:nth-child(1) > div > div.fixed.inset-0.z-40.flex > div > div.flex.px-4.pt-5.pb-2 > button")
+
+    xButton.addEventListener("click", function() {
+      console.log("clicked")
+      xButton.className.add("transition ease-in-out duration-300 transform")
+    })
+  </script>
     
 </body>
 
